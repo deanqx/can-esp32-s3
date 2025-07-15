@@ -1,5 +1,10 @@
 # can-esp32-s3
-[Work in progress] CAN Bus library for ESP32-S3 using Zig
+
+CAN Bus library for the ESP32-S3
+
+This is a learning project, it is my first time using a ESP32 chip.
+
+# Hardware
 
 Using this DevKit from [Amazon](https://amzn.eu/d/3hGfP8k).
 
