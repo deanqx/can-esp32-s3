@@ -12,18 +12,20 @@ Using this DevKit from [Amazon](https://amzn.eu/d/3hGfP8k).
 
 <img src="docs/esp32_s3_components.jpg" alt="ESP32-S3 DevKit Components on PCB" width="400"/>
 
-# Install ESP-IDF
+# Build-system
+
+## Install ESP-IDF
 
 Follow this [tutorial](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/get-started/linux-macos-setup.html#get-started-prerequisites).
 
-# Configure
+## Configure
 
 ```
 idf.py set-target esp32s3
 idf.py menuconfig
 ```
 
-# Build and flash
+## Build and flash
 
 ```
 idf.py build
@@ -32,3 +34,8 @@ idf.py build
 ```
 idf.py -p PORT flash
 ```
+
+# Tips
+
+Header files like `freertos/task.h` can be found under `$IDF_PATH/components/`.
+For this example at `$IDF_PATH/components/freertos/FreeRTOS-Kernel/include/freertos/task.h`.
