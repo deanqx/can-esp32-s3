@@ -1,1 +1,1 @@
-int main(void) { return 0; }
+void app_main(void) {}
