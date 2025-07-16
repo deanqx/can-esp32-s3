@@ -27,7 +27,8 @@ idf.py menuconfig
 
 ## Build and flash
 
-Don't forget to activate ESP IDF environment:
+Don't forget to activate ESP IDF environment.
+This is also required for `clangd` LSP to work.
 
 ```
 . $HOME/esp/esp-idf/export.sh
