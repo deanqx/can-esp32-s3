@@ -40,9 +40,13 @@ Or if you have set an alias:
 get_idf
 ```
 
+### Build
+
 ```
 idf.py build
 ```
+
+### Build and flash
 
 ```
 idf.py -p PORT flash
