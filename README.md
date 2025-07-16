@@ -27,6 +27,18 @@ idf.py menuconfig
 
 ## Build and flash
 
+Don't forget to activate ESP IDF environment:
+
+```
+. $HOME/esp/esp-idf/export.sh
+```
+
+Or if you have set an alias:
+
+```
+get_idf
+```
+
 ```
 idf.py build
 ```
