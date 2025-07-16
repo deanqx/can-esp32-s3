@@ -55,7 +55,12 @@ void can_init(void) {
 
     gpio_config(&io_conf);
 
-    // -- Setup timer
+    /* -- Setup timer
+     *
+     * Reference
+     * https://github.com/espressif/esp-idf/blob/master/examples/peripherals/timer_group/gptimer/main/gptimer_example_main.c
+     */
+
     // Only one timer at a time allowed for CAN Bus
     busy = xQueueCreate(1, sizeof(QueueHandle_t));
     if (!busy) {
